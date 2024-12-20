@@ -3,6 +3,7 @@ import styled from "styled-components";
 const Button = styled.button`
   width: 219px;
   height: 64px;
+  margin-top: 80px;
 
   font-family: Poppins;
   font-size: 16px;

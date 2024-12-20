@@ -1,0 +1,76 @@
+.login {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(125, 195, 168, 0.995);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login_item {
+  width: 500px;
+
+  height: 600px;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.login h1 {
+  font-size: 48px;
+}
+
+.inputlogin {
+  width: 400px;
+  padding: 20px;
+  border: solid 1px grey;
+}
+
+.login_item2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 10px;
+}
+
+label {
+  width: 400px;
+  display: flex;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.login_item button {
+  width: 100px;
+  height: 50px;
+  background-color: green;
+  color: #fff;
+  border-radius: 10px;
+}
+.login_item button:hover {
+  background-color: deepskyblue;
+}
+
+.login .back {
+  width: 90%;
+  display: flex;
+
+  gap: 10px;
+}
+.login .back button {
+  padding: 10px;
+  background-color: rgb(0, 255, 102);
+  border-radius: 10px;
+  color: #fff;
+}
+.login .back button:hover {
+  background-color: gold;
+}
+.login .back button:last-child {
+  background-color: slateblue;
+}

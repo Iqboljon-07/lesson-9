@@ -12,8 +12,8 @@ import {
 
 function Footer() {
   return (
-    <div className="w-full h-[560px] flex flex-col justify-between items-center  mt-28">
-      <nav className="w-[1278px] h-[416px] bg-white flex justify-between ">
+    <div className="max-w-full h-[560px] flex flex-col justify-between items-center   mt-28">
+      <aside className="w-[1278px] h-[416px]  bg-white flex justify-between  ">
         <div className="w-[452px] h-[416px] flex flex-col  items-center justify-between  ">
           <div className="w-[452px] ">
             <img src={shapes} alt="" />
@@ -34,7 +34,7 @@ function Footer() {
             DLF Cybercity, Bhubaneswar, India, &52050
           </p>
         </div>
-        <div className="w-[572px] flex gap-[50px] ">
+        <div className="w-[572px] flex items-center gap-[50px] ">
           <ul className="w-[120px] h-[220px] flex flex-col  font-semibold text-base text-[#232536] ">
             <li>Home</li>
             <li>Service</li>
@@ -64,7 +64,7 @@ function Footer() {
             <li>Blog</li>
           </ul>
         </div>
-      </nav>
+      </aside>
       <img
         style={{ position: "relative", bottom: "40px", left: "550px" }}
         src={Contact}

@@ -5,6 +5,7 @@ import rasm12 from "../../assets/12.svg";
 import image from "../../assets/Image.svg";
 import { TbHandFingerDown } from "react-icons/tb";
 const Career = () => {
+ 
   return (
     <div className="career">
       <div className="career_1">

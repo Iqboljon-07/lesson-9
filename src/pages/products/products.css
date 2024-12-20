@@ -1,0 +1,28 @@
+.product {
+  width: 100%;
+  margin-top: 150px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  grid-auto-rows: 350px;
+  gap: 20px;
+  align-content: center;
+  justify-content: center;
+}
+
+.product_item {
+  display: grid;
+  box-shadow: 4px 4px 4px 4px grey;
+  justify-items: center;
+  align-content: center;
+  border-radius: 20px;
+  color: white;
+  border: solid 2px rgb(187, 237, 184);
+}
+.product_item img {
+  width: 200px;
+  height: 200px;
+}
+.product_item h1 {
+  font-size: 18px;
+}

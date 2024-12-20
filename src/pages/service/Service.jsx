@@ -4,7 +4,7 @@ import { About1, H1, H3, P } from "../styles/styles";
 import { Button } from "../home/style";
 import shapes from "../../assets/Shapes.svg";
 import { GoArrowRight } from "react-icons/go";
-const About = () => {
+const Service = () => {
   return (
     <div className="about">
       <div className="about_1">
@@ -41,4 +41,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Service;

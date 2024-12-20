@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 * {
   margin: 0;
   padding: 0;
@@ -8,5 +9,9 @@
 }
 body {
   margin: 0 auto;
+
   max-width: 1600px;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: oblique;
 }
