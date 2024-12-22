@@ -3,6 +3,7 @@ import shapes from "../../assets/Shapes.svg";
 import { H1 } from "../../pages/styles/styles";
 import Contact from "../../assets/Contact.svg";
 import logo2 from "../../assets/Logo (2).svg";
+import "@/App.css";
 import {
   SlSocialFacebook,
   SlSocialTwitter,
