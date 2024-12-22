@@ -2,10 +2,12 @@ import React, { useEffect, useState } from "react";
 import "./products.css";
 import { request } from "@/api";
 import { useNavigate } from "react-router-dom";
+import Modal from "@/components/modal/Modal";
+import Detail from "../detail/Detail";
 
 function Products() {
   const navigate = useNavigate();
-
+  const [show, setShow] = useState(false);
   const [data, setData] = useState(null);
   const [count, setCount] = useState(1);
   const [isHovered, setIsHovered] = useState(false);
@@ -34,6 +36,10 @@ function Products() {
   if (count * ParpegeCount > 194) {
     document.querySelector("#btn").style.display = "none";
   }
+  function handle() {
+    setShow(true);
+    data?.products?.map((product) => navigate(`/item/${product.id}`));
+  }
 
   return (
     <>
@@ -41,11 +47,12 @@ function Products() {
         {data?.products?.map((product) => (
           <div key={product.id} className="product_item">
             <img
-              onClick={() => navigate(`/product/${product.id}`)}
+              onClick={() => setShow(navigate(`/item/${product.id}`))}
               src={product.thumbnail}
               alt=""
             />
-            <h1>{product.title} </h1>
+
+            <h1>{product.category} </h1>
           </div>
         ))}
       </div>
@@ -56,10 +63,12 @@ function Products() {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        See more{" "}
+        See more
       </button>
     </>
   );
 }
 
 export default Products;
+
+// onClick={() => navigate(`/product/${product.id}`)}

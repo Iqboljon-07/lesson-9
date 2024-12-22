@@ -1,3 +1,4 @@
+import Modal from "@/components/modal/Modal";
 import Career from "@/pages/career/Career";
 import Company from "@/pages/company/Company";
 import Detail from "@/pages/detail/Detail";
@@ -23,6 +24,7 @@ const Routers = () => {
           <Route path="/career" element={<Career />} />
           <Route path="/products" element={<Products />} />
           <Route path="/product/:id" element={<Detail />} />
+          <Route path="/item/:id" element={<Modal />} />
         </Route>
 
         <Route path="*" element={<NotFound />} />
