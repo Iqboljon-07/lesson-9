@@ -1,16 +1,19 @@
 .detail {
   max-width: 100%;
+  height: 100vh;
+
+  background-size: cover;
+  background-position: center;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 200px;
 }
 .detail_item {
   padding: 100px;
 
   display: grid;
-  grid-template-columns: repeat(2, 50%);
+  grid-template-columns: repeat(3, 350px);
   grid-template-rows: auto;
 }
 .detail_item1 {
@@ -18,6 +21,32 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.detail_item1 img {
+  animation-name: detail;
+  animation-duration: 1.5s;
+  z-index: -1;
+  animation-iteration-count: infinite;
+  animation-timing-function: unset;
+  animation-delay: 0s;
+  position: relative;
+  animation-direction: alternate;
+}
+
+@keyframes detail {
+  /* to {
+    transform: scale(1.5);
+    opacity: 0.5;
+  } */
+  to {
+    left: -30%;
+    transform: rotate(0deg);
+  }
+  from {
+    left: 30%;
+    transform: rotate(360deg);
+  }
 }
 
 .detail_item2 {
@@ -30,4 +59,35 @@
 .detail_item2 img {
   width: 100px;
   height: 100px;
+  animation-name: details;
+  animation-duration: 2s;
+
+  animation-iteration-count: infinite;
+  animation-timing-function: unset;
+  animation-delay: 0s;
+  position: relative;
+  animation-direction: alternate;
+  z-index: -1;
+}
+
+@keyframes details {
+  to {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(360deg);
+  }
+}
+
+.detail_item3 {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  justify-content: center;
+}
+.detail_item3 p {
+  text-wrap: wrap;
+  color: lightblue;
 }

@@ -1,18 +1,21 @@
 import { request } from "../../api/index";
-import React, { Fragment, useEffect, useState } from "react";
+import React, { Fragment, memo, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./detail.css";
 import { H1 } from "../styles/styles";
 function Detail() {
   const [data, setData] = useState(null);
   const params = useParams();
-  console.log(params);
+  // console.log(params);
   const { id } = useParams();
-  console.log(useParams());
+  // console.log(useParams());
   useEffect(() => {
     request.get(`./products/${id}`).then((res) => setData(res.data)); //Object qaytaradi shuning uchun map lash shrt emas
   }, []);
-  console.log(data);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  // console.log(data);
 
   return (
     <>
@@ -28,7 +31,26 @@ function Detail() {
 
           <div className="detail_item1">
             <img src={data?.thumbnail} alt="" />
-            <h1 style={{ fontWeight: "bold" }}> {data?.title} </h1>
+            <h1 style={{ fontWeight: "bold", fontSize: "48px" }}>
+              {" "}
+              {data?.title}{" "}
+            </h1>
+          </div>
+
+          <div className="detail_item3">
+            <p>{data?.description} </p>
+            <span style={{ display: "flex", justifyContent: "space-between" }}>
+              warrantyInformation:
+              <h4 style={{ color: "darkblue" }}>
+                {" "}
+                {data?.warrantyInformation}{" "}
+              </h4>
+            </span>
+
+            <span style={{ display: "flex", justifyContent: "space-between" }}>
+              returnPolicy :
+              <h4 style={{ color: "darkblue" }}> {data?.returnPolicy} </h4>
+            </span>
           </div>
         </div>
       </div>
@@ -36,4 +58,4 @@ function Detail() {
   );
 }
 
-export default Detail;
+export default memo(Detail);

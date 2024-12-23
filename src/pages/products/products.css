@@ -1,11 +1,10 @@
 .product {
   width: 100%;
-  margin-top: 150px;
-
+  height: auto;
   display: grid;
   grid-template-columns: repeat(4, 300px);
   grid-auto-rows: 350px;
-  gap: 20px;
+  gap: 40px;
   align-content: center;
   justify-content: center;
 }
@@ -19,11 +18,48 @@
   color: white;
   border: solid 2px rgb(187, 237, 184);
 }
+
 .product_item img {
   width: 200px;
   height: 200px;
 }
 .product_item h1 {
-  font-size: 18px;
-  color:black
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+.login_control {
+  width: 100%;
+  height: auto;
+
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#btns {
+  width: 80%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+#btns button {
+  padding: 5px;
+}
+
+button svg {
+  font-size: 28px;
+}
+button svg:hover {
+  cursor: pointer;
+  color: red;
+}
+.enter {
+  width: 320px;
 }

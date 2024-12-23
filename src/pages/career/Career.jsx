@@ -1,11 +1,10 @@
-import React from "react";
+import React, { memo } from "react";
 import "./career.css";
 import { H1, H3, P } from "../styles/styles";
 import rasm12 from "../../assets/12.svg";
 import image from "../../assets/Image.svg";
 import { TbHandFingerDown } from "react-icons/tb";
 const Career = () => {
- 
   return (
     <div className="career">
       <div className="career_1">
@@ -42,4 +41,4 @@ const Career = () => {
   );
 };
 
-export default Career;
+export default memo(Career);

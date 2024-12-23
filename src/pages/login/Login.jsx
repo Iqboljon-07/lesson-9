@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import "./login.css";
 import { useNavigate } from "react-router-dom";
 function Login() {
@@ -29,4 +29,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default memo(Login);

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import "./service.css";
 import { About1, H1, H3, P } from "../styles/styles";
 import { Button } from "../home/style";
@@ -41,4 +41,4 @@ const Service = () => {
   );
 };
 
-export default Service;
+export default memo(Service);

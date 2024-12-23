@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo, useEffect } from "react";
 import "./home.css";
 import shapes from "../../assets/Shapes.svg";
 import Header from "../../assets/Header Image.svg";
@@ -51,4 +51,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default memo(Home);

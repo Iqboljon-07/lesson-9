@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import "./notfound.css";
 import rasm404 from "@/assets/404.png";
 import photo404 from "@/assets/error.gif";
@@ -11,4 +11,4 @@ function NotFound() {
   );
 }
 
-export default NotFound;
+export default memo(NotFound);

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import shapes from "../../assets/Shapes.svg";
 import { H1 } from "../../pages/styles/styles";
 import Contact from "../../assets/Contact.svg";
@@ -90,4 +90,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default memo(Footer);

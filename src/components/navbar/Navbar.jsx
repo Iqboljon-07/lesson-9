@@ -1,6 +1,7 @@
 import "./navbar.css";
 import logo1 from "../../assets/Logo (1).svg";
 import { Link, NavLink, useLocation } from "react-router-dom";
+import { memo } from "react";
 
 const Navbar = () => {
   const { pathname } = useLocation();
@@ -28,4 +29,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default memo(Navbar);

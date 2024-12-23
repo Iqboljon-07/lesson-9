@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import "./company.css";
 import rasm10 from "../../assets/10.svg";
 import rasm11 from "../../assets/11.svg";
@@ -43,4 +43,4 @@ function Company() {
   );
 }
 
-export default Company;
+export default memo(Company);
