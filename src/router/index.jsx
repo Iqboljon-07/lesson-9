@@ -13,7 +13,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 
 const Routers = () => {
-  console.log(import.meta.env.VITE_AGE);
+  console.log(import.meta.env.VITE_AGEE);
   return (
     <>
       <Routes>
